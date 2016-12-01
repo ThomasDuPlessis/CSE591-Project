@@ -1,0 +1,9 @@
+
+triangle(a, b, c).
+
+emptyTriangle(a, b, c) :- polygon(X, _), .
+
+TriangleContains(A,B,C,X) :- .
+
+edge(X, Y) :- polygon(X,Y).
+edge(A, C) :- edge(A, B), edge(B,C), !polygon(X,_), pointsContain(a,b,c, X).
